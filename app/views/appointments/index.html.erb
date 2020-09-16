@@ -1,3 +1,8 @@
 <h1>appointment index page</h1>
 
-<%= @apps.each %>
+<% @apps.each do |app| %>
+  <%= link_to app.time, appointment_path(app) %>
+  <%= app.date %>
+<% end %>
+<br>
+<%= link_to 'create a new appoinment', appointments_new_path %>
