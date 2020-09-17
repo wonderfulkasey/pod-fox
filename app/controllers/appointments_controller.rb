@@ -12,13 +12,20 @@ class AppointmentsController < ApplicationController
       @app = Appointment.find(params[:id])
     end
 
-
     def create
       @app = Appointment.new(app_params)
       @app.save
       redirect_to appointment_path(@app)
     end
 
+    def edit 
+    end
+
+    def update
+    end 
+
+    def destroy
+    end 
 
     private
 
