@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get '/appointments/new', to: 'appointments#new'
   get '/appointments/:id', to: 'appointments#show', as: "appointment"
 
-  #resources :appointments
+  resources :appointments
 end

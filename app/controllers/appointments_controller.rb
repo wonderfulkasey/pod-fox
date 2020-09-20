@@ -19,6 +19,7 @@ class AppointmentsController < ApplicationController
     end
 
     def edit 
+      @app = Appointment.find(params[:id])
     end
 
     def update
