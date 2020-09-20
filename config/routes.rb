@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get '/appointments', to: 'appointments#index'
   get '/appointments/new', to: 'appointments#new'
   get '/appointments/:id', to: 'appointments#show', as: "appointment"
-
-  resources :appointments
+  post '/appointments', to: 'appointments#create'
+  #resources :appointments
 end

@@ -3,6 +3,7 @@
 <% @apps.each do |app| %>
   <%= link_to app.time, appointment_path(app) %>
   <%= app.date %>
+  <br>
 <% end %>
 <br>
 <%= link_to 'create a new appoinment', appointments_new_path %>
