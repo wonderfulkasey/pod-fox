@@ -29,8 +29,12 @@ class AppointmentsController < ApplicationController
 
     def update
       @app = Appointment.find(params[:id])
-      @app.update(app_params)
-      redirect_to appointment_path
+
+      if @app.update(app_params)
+        redirect_to appointment_path
+      else 
+        render 'edit'
+      end
 
     end 
 

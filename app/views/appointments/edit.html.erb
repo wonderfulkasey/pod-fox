@@ -10,3 +10,7 @@
   <%= f.submit %>
 
 <% end %>
+
+<% @app.errors.full_messages.each do |error| %>
+<%= error %> <br>
+<% end %>

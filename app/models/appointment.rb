@@ -1,7 +1,7 @@
 class Appointment < ApplicationRecord
     
-    #belongs_to :patients 
-    has_many :patients, through: :doctors
+    belongs_to :patient
+    belongs_to :doctor
 
     validates :time, presence: true 
     validates :date, presence: true
