@@ -18,8 +18,9 @@ class AppointmentsController < ApplicationController
       if @app.save
         redirect_to appointment_path(@app)
       else 
-
+        render 'new'
       end
+
     end
 
     def edit 

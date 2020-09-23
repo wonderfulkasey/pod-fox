@@ -4,4 +4,5 @@ class Appointment < ApplicationRecord
     has_many :patients, through: :doctors
 
     validates :time, presence: true 
+    validates :date, presence: true
 end
