@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   get '/appointments/new', to: 'appointments#new'
   get '/appointments/:id', to: 'appointments#show', as: "appointment"
   
-  get '/appointments/:id/edit', to: 'appointments#edit'
-  get '/appointments/:id', to: 'appointments#update'
+  get '/appointments/:id/edit', to: 'appointments#edit', as: "edit_appointment"
+  patch '/appointments/:id', to: 'appointments#update'
 
   get '/appointments/:id', to: 'appointments#destroy'
   #resources :appointments
