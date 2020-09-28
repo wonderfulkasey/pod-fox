@@ -1,0 +1,8 @@
+<h1>doctor index page</h1>
+
+<% @docs.each do |doc| %>
+  <%= link_to doc.name, doctor_path(doc) %>
+  <br>
+<% end %>
+<br>
+<%= link_to 'create a new doctor', doctors_new_path %>

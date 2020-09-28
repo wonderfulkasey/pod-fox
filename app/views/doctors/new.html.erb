@@ -1,0 +1,7 @@
+<h1>Create a Doctor!</h1>
+
+<%= render partial: "form", locals: {doctor: @doc} %>
+
+<% @doc.errors.full_messages.each do |error| %>
+<%= error %> <br>
+<% end %>
