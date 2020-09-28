@@ -30,7 +30,7 @@ class DoctorsController < ApplicationController
     def update
       @doc = Doctor.find(params[:id])
 
-      if @doc.update(app_params)
+      if @doc.update(doc_params)
         redirect_to doctor_path
       else 
         render 'edit'
