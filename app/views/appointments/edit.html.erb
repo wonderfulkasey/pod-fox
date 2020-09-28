@@ -6,3 +6,12 @@
 <%= error %> <br>
 <% end %>
 
+
+<h3>Current Date/Time:
+<span id="datetime"></span>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+</h3>
+

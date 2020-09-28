@@ -6,3 +6,13 @@
 
 <%= link_to 'back', appointments_path %>
 <%= link_to 'edit', edit_appointment_path(@app) %>
+
+
+
+<h3>Current Date/Time:
+<span id="datetime"></span>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+</h3>
